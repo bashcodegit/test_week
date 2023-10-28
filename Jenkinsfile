@@ -6,7 +6,7 @@ node {
     echo 'Application Testing'
   }
   stage('Test'){
-      sh 'python manage.py test'
+      sh 'python3 manage.py test'
   }
   stage('SonarQube Analysis') {
     def scannerHome = tool 'SonarScanner';
